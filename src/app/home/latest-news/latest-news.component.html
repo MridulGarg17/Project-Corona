@@ -1,3 +1,8 @@
+<div >
+<mat-toolbar color="primary">
+    <span>Get the Latest news about corona here:</span>
+  </mat-toolbar>
+
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex-basis: 25%; margin:10px ;" *ngFor="let news of newsArray">
         <mat-card style="width: 300px;">
@@ -5,8 +10,11 @@
                 {{news.title}}
             </mat-card-title>
             <mat-card-content>
+
                 {{news.description}}
             </mat-card-content>
         </mat-card>
         </div>
     </div>
+    </div>
+    

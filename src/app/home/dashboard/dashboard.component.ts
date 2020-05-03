@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class DashboardComponent implements OnInit {
 
   constructor(private router: Router) { }
-
+  date = new Date();
   ngOnInit(): void {
   }
 
