@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 import {INews} from '../../interface';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private router : Router) { }
+  constructor(private router : Router,private _snackBar: MatSnackBar) { }
 
 
   newsArray : INews[]=[]
@@ -45,6 +46,10 @@ export class AdminComponent implements OnInit {
     this.newsArray.push(this.News);
     //console.log(this.newsArray);
     localStorage.setItem('news',JSON.stringify(this.newsArray));
+    this._snackBar.open("News added succefully",null ,{
+      duration: 3000,
+    });
+  
     this.newsForm.reset();
     this.newsForm.markAsUntouched();
     console.log("local"+ localStorage.getItem('news'));
