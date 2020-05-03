@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { INews } from 'src/app/Interface';
+import { INews } from 'src/app/interface';
 
 @Component({
   selector: 'app-latest-news',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import {IState, ICity, ICountry} from '../../Interface'
+import {IState, ICity, ICountry} from '../../interface'
 import { ApiService } from 'src/app/api.service';
 
 @Component({

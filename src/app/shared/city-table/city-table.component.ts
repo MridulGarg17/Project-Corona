@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ICity } from 'src/app/Interface';
+import { ICity } from 'src/app/interface';
 
 
 export interface PeriodicElement {
